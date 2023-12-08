@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>Validation</servlet-name>
+        <servlet-class>Validation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>Welcome</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Error</servlet-name>
+        <servlet-class>Error</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Information</servlet-name>
+        <servlet-class>Information</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Calendar</servlet-name>
+        <servlet-class>Calendar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Validation</servlet-name>
+        <url-pattern>/Validation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/Welcome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Error</servlet-name>
+        <url-pattern>/Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Information</servlet-name>
+        <url-pattern>/Information</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Calendar</servlet-name>
+        <url-pattern>/Calendar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <!--implicit-->
+    <servlet>  
+<servlet-name>NameTest</servlet-name>  
+<jsp-file>/Welcome.jsp</jsp-file>  
+  
+<init-param>  
+<param-name>dname</param-name>  
+<param-value> Name text </param-value>  
+</init-param>  
+  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>NameTest</servlet-name>  
+<url-pattern>/welcome</url-pattern>  
+</servlet-mapping>  
+    <!--implicit-->
+</web-app>
